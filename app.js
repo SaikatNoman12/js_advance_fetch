@@ -173,3 +173,47 @@ fetch('https://jsonplaceholder.typicode.com/posts/1', {
 fetch('https://jsonplaceholder.typicode.com/posts/1', {
     method: 'DELETE'
 });
+
+
+
+// JS Symbol() data structure:---------
+
+const a = Symbol('Hello');
+const b = Symbol('Hello');
+
+console.log(a); // output: Symbol(Hello);
+console.log(b); // output: Symbol(Hello);
+console.log(typeof a); // output: symbol;
+
+console.log(a == b);  // output: false
+
+
+// Symbol description property:---------
+const c = Symbol('JavaScript');
+const d = Symbol('JavaScript');
+
+console.log(c.description === d.description);  // output: true
+
+
+const f = {
+    name: 'Hello',
+    age: 100,
+    [c]: 'hello'
+}
+
+console.log(f);
+/* Output: 
+    {
+        name: 'Hello', 
+        age:100,
+        Symbol(JavaScript): 'hello'
+    }
+*/
+
+console.log(JSON.stringify(f));
+/* Output: 
+    {
+        "name":"Hello",
+        "age":100
+    }
+*/
