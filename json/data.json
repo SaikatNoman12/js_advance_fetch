@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "name":"Siful Emon",
+        "city":"FFF",
+        "religion":"Islam"
+    },
+    {
+        "id":2,
+        "name":"Moinul Ashsan",
+        "city":"SSS",
+        "religion":"Islam"
+    },
+    {
+        "id":3,
+        "name":"Hridoy Nath",
+        "city":"MMM",
+        "religion":"Hind"
+    }
+]
